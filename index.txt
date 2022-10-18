@@ -1,0 +1,38 @@
+START
+
+-Aprire Netflix
+
+-Caricare tutti i film di Netflix
+-Caricare tutte le serie di Netflix
+    -SE titolo è serie
+     -scarta titolo
+    -ALTRIMENTI
+     -continua selezione
+
+-Raggruppare film per "genere" e "durata"
+    -SE genere è ("Horror" OR "Sentimentale") AND durata è ">105min"
+     -scarta titolo
+    -ALTRIMENTI
+     -continua selezione
+
+-Ora raggruppare per "anno"
+    -SE anno è "<2015"
+     -scarta titolo
+    -ALTRIMENTI
+     -continua selezione
+
+-SE il film è in "già visti"
+ -scarta titolo
+-ALTRIMENTI
+ -continua selezione
+
+-Guardare trailer
+    -SE piace 
+     -aggiungi a preferiti
+    -ALTRIMENTI
+     -scarta titolo
+
+-Quando NOT sonno AND ho tempo
+    -play streaming AND ADD a "già visti"
+
+END
